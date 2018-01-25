@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+    background: linear-gradient(lightblue 40%, transparent 90%);
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper {
+    /*border: solid 1px red;*/
+    width: 1000px;
+    min-height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 1px 1px black;
+    background-color: aliceblue;
+}
+
+article {
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 980px;
+    height: 50px;
+    /*margin-top: -60px;*/
+    margin: -50px 10px 0 10px;
+    border-top: solid 1px grey;
+    position: absolute;
+    bottom: 0;
+}
+
+footer > * {
+    margin: 0;
+}

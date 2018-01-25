@@ -1,0 +1,168 @@
+html {
+    height: 100%;
+    background: linear-gradient(lightblue 40%, transparent 90%);
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper {
+    /*border: solid 1px red;*/
+    width: 1000px;
+    min-height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 3px black !important;
+    background-color: aliceblue;
+    padding-top: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+        nav {
+            /*border: outset 2px orange;*/
+            width: 754px;
+            height: 39px;
+            margin: 0 auto;
+            /*background-color: orange;
+            border-radius: 8px;*/
+            border: 1px solid #222;
+            background-color: #111;
+            background-image: -moz-linear-gradient(#444, #111);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
+            background-image: -webkit-linear-gradient(#444, #111);
+            background-image: -ms-linear-gradient(#444, #111);
+            background-image: linear-gradient(#444, #111);
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            -moz-box-shadow: 0 1px 1px #777;
+            -webkit-box-shadow: 0 1px 1px #777;
+            box-shadow: 0 1px 1px #777;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+            z-index: 2000;
+        }
+
+        li {
+            list-style-type: none;
+            position: relative;
+            float: left;
+            border-right: solid 1px grey;
+            width: 150px;
+            text-align: center;
+        }
+        
+        ul > li:hover > a {
+            color: white;
+            text-shadow: 0 0 5px white;
+            transform: scale(1.2);
+            transition-duration: .5s;
+        }
+        
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            /*width: 150px;*/
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center
+        }
+        
+        ul li ul {
+            position: absolute;
+            top: 41px;
+            display: none;
+        }
+        
+        ul li:hover ul {
+            display: block;
+            /*background-color: orange;
+            border: outset 2px orange;
+            border-radius: 8px;
+            transition-duration: .5s*/
+            border: 1px solid #222;
+            background-color: #111;
+            background-image: -moz-linear-gradient(#444, #111);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
+            background-image: -webkit-linear-gradient(#444, #111);
+            background-image: -ms-linear-gradient(#444, #111);
+            background-image: linear-gradient(#444, #111);
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            -moz-box-shadow: 0 1px 1px #777;
+            -webkit-box-shadow: 0 1px 1px #777;
+            box-shadow: 0 1px 1px #777;
+        }
+        
+        ul li ul li {
+            border-right: none;
+            border-top: solid 1px grey;
+        }
+        
+        ul li ul li:first-child {
+            border-top: none;
+        }
+        
+        ul li ul li:hover a {
+            color: white;
+            text-shadow: 0 0 5px white;
+            transform: scale(1.2);
+            transition-duration: .5s;
+        }
+
+iframe {
+    margin: 10px 0 0 10px;
+}
+        
+.leftContent {
+    float: left;
+}
+
+article {
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 980px;
+    height: 50px;
+    margin: -50px 10px 0 10px;
+    border-top: solid 1px grey;
+    position: absolute;
+    bottom: 0;
+}
+
+footer > .fLeft > p {
+    margin: 0;
+}
+
+.fLeft {
+    width: 50%;
+    float: left;
+}
+
+.fLeft p:first-child {
+    font-weight: bold;
+}
+
+.fLeft p:last-child {
+    font-size: small;
+    margin-left: 1em;
+}
+
+.counter {
+    margin: 5px 0 0 0;
+    text-align: center;
+}

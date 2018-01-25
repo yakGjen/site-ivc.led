@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Контакты
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/макет.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [52.72135374, 25.32759326],
+                zoom: 14
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([52.72135374, 25.32759326], {
+                hintContent: 'Ивацевичи!',
+                balloonContent: 'Ледовый'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+    <style>
+    
+        
+        iframe {
+            margin: 10px 60px 0 10px !important;
+        }
+        
+        .leftContent {
+            float: left;
+        }
+        
+        
+        .content p:nth-child(odd):not(:last-child), span {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        #map {
+            margin-left: 240px;
+        }
+    </style>
+</head>
+<body>
+ 
+<div class="wrapper">
+        <header>
+            <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="главная.html" title="Главная">Главная</a></li>
+                    <li><a href="о_нас.html" title="О нас">О нас</a></li>
+                    <li><a href="#" title="Достижения">Достижения</a></li>
+                    <li><a href="#" title="Галерея">Галерея</a>
+                        <ul>
+                            <li><a href="фото.html" title="Фото">Фото</a>
+                            <li><a href="видео.html" title="Видео">Видео</a>
+                        </ul>
+                    </li>
+                    <li><a href="контакты.html" title="Контакты">Контакты</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <article>
+            <div class="leftContent">
+                <div>
+                    <iframe scrolling="no" frameborder="0" style="width: 180px; height: 300px; border: none" src="http://servis-oprosov.ru/poll/8641/widget"></iframe>
+                </div>
+                <div>
+                    <iframe frameborder="0" height="145" marginheight="0" marginwidth="0" scrolling="no" src="http://myfin.by/scripts/informer/informer-bereza-180.php" width="180"></iframe>
+                </div>
+            </div>
+            <div class="content">
+                <h1>
+                    Контакты:
+                </h1>
+                <h3>
+                    Учебно-спортивное учреждение "Детско - юношеская спортивная школа"
+                </h3>
+                <p>
+                    Директор
+                </p>
+                <p>
+                    Богдусевич Анатолий Михайлович, тел. 8 01645 9 01 53
+                </p>
+                <p>
+                    Заместитель диретора по основной деятельности
+                </p>
+                <p>
+                    Гончар Ольга Викторовна, тел. 8 01645 9 00 56
+                </p>
+                <p>
+                    <span>группа “ВКонтакте”:</span> <a target="_blank" href="https://vk.com/icearena_ivatsevichi">Здесь</a>
+                </p>
+                <p>
+                    <span>email:</span> ledarena@ivacevichi.edu.by
+                </p>
+            </div>
+            <div id="map" style="width: 650px; height: 400px"></div>
+        </article>
+        <footer>
+            <div class="fLeft">
+                <p>Контакты:</p>
+                <p> 
+                    г. Ивацевичи, Ледовая арена - ул. Спортивная, д.3 Контактный телефон: (801645) 9-01-52 (приемная), 9-01-53 (директор)
+                </p>
+            </div>
+            <div class="counter">
+                <div id="qoo-counter">
+                    <a href="http://qooi.ru/">
+                        <img src="http://qooi.ru/counter/standard/001.png" alt="Счетчик посещаемости и статистика сайта">
+                        <div id="qoo-counter-visits"></div>
+                        <div id="qoo-counter-views"></div>
+                    </a>
+                </div>
+                <script type="text/javascript" src="http://qoo.by/counter.js"></script>
+            </div>
+        </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Фото</title>
+<link rel="stylesheet" type="text/css" href="css/макет.css">
+<style>
+    .gallery {
+	margin-top: 10px;
+    margin-left: 300px;
+	position: relative;
+	padding-top: 10%;
+	-moz-user-select: none; user-select: none;
+}
+
+.gallery img {
+	position: relative;
+	top: 15%;
+	left: 12.5%;
+	max-width: 28.5%;
+	max-height: 43.5%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	cursor: zoom-in;
+	transition: .5s;
+}
+/*.gallery img:nth-child(4n-2) {left: 37.5%;}
+.gallery img:nth-child(4n-1) {left: 62.5%;}
+.gallery img:nth-child(4n) {left: 87.5%;}
+.gallery img:nth-child(n+5) {top: 75%;}  */ 
+
+.gallery img:focus {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	max-width: 100%;
+	max-height: 100%;
+	outline: none;
+	pointer-events: none;
+}
+
+.gallery img:focus ~ div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	cursor: zoom-out;
+	opacity: 0;
+    z-index: 100;
+}
+</style>
+</head>
+<body>
+
+   <div class="wrapper">
+        <header>
+            <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="главная.html" title="Главная">Главная</a></li>
+                    <li><a href="о_нас.html" title="О нас">О нас</a></li>
+                    <li><a href="#" title="Достижения">Достижения</a></li>
+                    <li><a href="#" title="Галерея">Галерея</a>
+                        <ul>
+                            <li><a href="фото.html" title="Фото">Фото</a>
+                            <li><a href="видео.html" title="Видео">Видео</a>
+                        </ul>
+                    </li>
+                    <li><a href="контакты.html" title="Контакты">Контакты</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <article>
+            <div class="leftContent">
+                <div>
+                    <iframe scrolling="no" frameborder="0" style="width: 180px; height: 300px; border: none" src="http://servis-oprosov.ru/poll/8641/widget"></iframe>
+                </div>
+                <div>
+                    <iframe frameborder="0" height="145" marginheight="0" marginwidth="0" scrolling="no" src="http://myfin.by/scripts/informer/informer-bereza-180.php" width="180"></iframe>
+                </div>
+            </div>
+            <div class="content">
+                	<div class="gallery">
+                        <img src='img/галерея/1.jpg' tabindex="0">
+                        <img src='img/галерея/2.jpg' tabindex="0">
+                        <img src='img/галерея/3.jpg' tabindex="0">
+                        <br>
+                        <img src='img/галерея/4.jpg' tabindex="0">
+                        <img src='img/галерея/5.jpg' tabindex="0">
+                        <img src='img/галерея/6.jpg' tabindex="0">
+                        <br>
+                        <img src='img/галерея/7.jpg' tabindex="0">
+                        <img src='img/галерея/8.jpg' tabindex="0">
+                        <img src='img/галерея/9.jpg' tabindex="0">
+                        <div></div>
+                    </div>
+            </div>
+        </article>
+        <footer>
+            <div class="fLeft">
+                <p>Контакты:</p>
+                <p> 
+                    г. Ивацевичи, Ледовая арена - ул. Спортивная, д.3 Контактный телефон: (801645) 9-01-52 (приемная), 9-01-53 (директор)
+                </p>
+            </div>
+            <div class="counter">
+                <div id="qoo-counter">
+                    <a href="http://qooi.ru/">
+                        <img src="http://qooi.ru/counter/standard/001.png" alt="Счетчик посещаемости и статистика сайта">
+                        <div id="qoo-counter-visits"></div>
+                        <div id="qoo-counter-views"></div>
+                    </a>
+                </div>
+                <script type="text/javascript" src="http://qoo.by/counter.js"></script>
+            </div>
+        </footer>
+</div>
+ 
+    
+</body>
+</html>
